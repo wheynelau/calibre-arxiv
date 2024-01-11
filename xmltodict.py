@@ -5,6 +5,7 @@ try:
     from defusedexpat import pyexpat as expat
 except ImportError:
     from xml.parsers import expat
+
 from xml.sax.saxutils import XMLGenerator
 from xml.sax.xmlreader import AttributesImpl
 
@@ -552,8 +553,8 @@ def unparse(
 
 
 if __name__ == "__main__":  # pragma: no cover
-    import sys
     import marshal
+    import sys
 
     try:
         stdin = sys.stdin.buffer
