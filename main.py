@@ -7,6 +7,7 @@ import os
 import urllib.request
 from typing import Any, Dict, List
 
+# import calibre_plugins.arxiv.requests as requests can this be achieved??
 import calibre_plugins.arxiv.xmltodict as xmltodict
 from calibre.gui2 import open_url
 from calibre.gui2.store import StorePlugin
