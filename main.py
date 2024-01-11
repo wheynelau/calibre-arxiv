@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 # License: GPLv3 Copyright: 2024, wheynelau
 
+import os
 import urllib.request
 import logging
 from qt.core import QUrl
@@ -16,14 +17,14 @@ from calibre.gui2.store.basic_config import BasicStoreConfig
 from calibre.gui2.store.web_store_dialog import WebStoreDialog
 
 logger = logging.getLogger(__name__)
-logger.setLevel(logging.DEBUG)
+logger.setLevel(logging.INFO)
 formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
 
-# Create a file handler and set the formatter
-file_handler = logging.FileHandler('log.txt')
-file_handler.setFormatter(formatter)
 
-# Add the file handler to the logger
+os.makedirs(os.path.dirname('logs/arxiv_log.txt'), exist_ok=True)
+
+file_handler = logging.FileHandler('logs/arxiv_log.txt')
+file_handler.setFormatter(formatter)
 logger.addHandler(file_handler)
 
 def requests_get(url,timeout=30):
@@ -50,8 +51,8 @@ class ArxivStorePlugin(BasicStoreConfig, StorePlugin):
             d.exec()
 
     def search(self, query:str, max_results=10, timeout = 10) -> List[Dict]:
-        logger.info("Searching for: {}".format(query))
-        logger.info("Query type: {}".format(type(query)))
+        logger.debug("Searching for: {}".format(query))
+        logger.debug("Query type: {}".format(type(query)))
         if isinstance(query, bytes):
             query = query.decode('utf-8')
         logger.info("Query type: {}".format(type(query)))
