@@ -18,7 +18,7 @@ This project was initially developed to assist in managing academic papers withi
 
 ### Source files
 1. Clone the repository.
-2. Run `bash ./zip.sh` or manually zip these files, it must be a __zip__ file and not a rar file:
+2. Run `bash ./zip.sh` or using a GUI like winrar, it must be a ___zip___ file and not a rar file:
    -  `__init__.py`
    -  `main.py`
    -  `xmltodict.py`
