@@ -12,13 +12,13 @@ This project was initially developed to assist in managing academic papers withi
 ### Release files
 1. Download the latest release from the [releases page](https://github.com/wheynelau/calibre-arxiv/releases).
 2. Upload the plugin to calibre by Preferences -> Plugins -> Load Plugin from File and select the zip file you downloaded.
-3. There should be an option to restart calibre after installation. If not, restart calibre manually.
+3. There should be an option to restart Calibre after installation. If not, restart Calibre manually.
 4. The plugin should now be installed and ready to use.
 
 
 ### Source files
 1. Clone the repository.
-2. Run `bash ./zip.sh` or use a GUI like WinRAR, it must be a ___zip___ file and should not contain subfolders. These are the files that *MUST* be inside:
+2. Run `bash ./zip.sh` or use a GUI like WinRAR, it must be a **zip** file and should not contain subfolders. These are the files that **MUST** be inside:
    -  `__init__.py`
    -  `main.py`
    -  `xmltodict.py`
