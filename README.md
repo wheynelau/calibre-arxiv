@@ -23,7 +23,7 @@ This project was initially developed to assist in managing academic papers withi
    -  `main.py`
    -  `xmltodict.py`
    -  `plugin-import-name-arxiv.txt`
-3. Foloow steps 2-4 in the Release files section.
+3. Follow steps 2-4 in the Release files section.
 
 ## Features
 
@@ -34,7 +34,7 @@ This project was initially developed to assist in managing academic papers withi
 ### To be implemented
 - Searching by author name
 - Searching by arXiv ID
-- Searching of categories
+- Searching by categories
 - Auto downloads of papers using RSS or other methods (is this done within calibre?)
 
 ## Contributing
