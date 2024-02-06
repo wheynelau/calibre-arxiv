@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 # License: GPLv3 Copyright: 2024, wheynelau
-store_version = 8
+store_version = 7
 
 __license__ = "GPL v3"
 __copyright__ = "2024, wheynelau <waynelau15045@gmail.com>"
